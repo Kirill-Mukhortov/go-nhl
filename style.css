@@ -1,0 +1,20 @@
+.header__arrow {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 90%;
+    right: 10%;
+    top: 3%;
+}
+
+.header__arrow--reversed {
+    left: 95%;
+    right: 5%;
+    transform: rotate(-180deg);
+}
+
+.home {
+    background-image: url('images/home/home.png');
+    background-size: cover;
+    height: 100vh;
+}
