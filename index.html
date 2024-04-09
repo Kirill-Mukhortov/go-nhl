@@ -8,149 +8,162 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;800&display=swap">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="shortcut icon" href="/images/icons/favicon.ico">
 </head>
 
 <body>
 <main>
-    <section class="home">
-        <header class="header">
-            <div class="header__font-text">GO<br>SURF</div>
-            <div class="header__logo">
-                <div class="header__rectangle"></div>
-                <div class="header__text">
-                    <span class="header__text-inner">GO</span>
-                    <span class="header__text-inner-dash"></span>
-                    <span class="header__text-inner">NHL</span>
-                </div>
-            </div>
-            <nav class="header__arrows">
-                <a class="header__arrow" href="#"><img src="images/home/arrow.svg" alt="navigation arrow"></a>
-                <a class="header__arrow header__arrow--reversed" href="#"><img src="images/home/arrow.svg" alt="navigation arrow"></a>
-            </nav>
-        </header>
-        <div class="vertical-nav">
-            <ul class="vertical-nav__list">
-                <a class="vertical-nav__item" href="#">
-                    <img class="vertical-nav__img" src="images/home/surf.svg" alt="surf and waves">
-                    <span class="vertical-nav__text">Game</span>
-                </a>
-                <a class="vertical-nav__item" href="#">
-                    <img class="vertical-nav__img" src="images/home/travel.svg" alt="travel bus">
-                    <span class="vertical-nav__text">Travel</span>
-                </a>
-                <a class="vertical-nav__item" href="#">
-                    <img class="vertical-nav__img" src="images/home/camp.svg" alt="camping">
-                    <span class="vertical-nav__text">Recovery</span>
-                </a>
-                <a class="vertical-nav__item" href="#">
-                    <img class="vertical-nav__img" src="images/home/surf_board.svg" alt="surf board shop">
-                    <span class="vertical-nav__text">Merch</span>
-                </a>
-                <a class="vertical-nav__item" href="#">
-                    <img class="vertical-nav__img vertical-nav__img--small" src="images/home/search.svg" alt="search logo">
-                </a>
-                <div class="date">
-                    <div class="date__day">
-                        <p class="date__day-text">20</p>
-                    </div>
-                    <div class="date__month-year">
-                        <p class="date__month-year-text">06 | 2018</p>
+    <div class="scrollable-container">
+        <section class="home">
+            <header class="header">
+                <div class="header__font-text">GO<br>SURF</div>
+                <div class="header__logo">
+                    <div class="header__rectangle"></div>
+                    <div class="header__text">
+                        <span class="header__text-inner">GO</span>
+                        <span class="header__text-inner-dash"></span>
+                        <span class="header__text-inner">NHL</span>
                     </div>
                 </div>
-                <div class="location">
-                    <img class="location__img" src="images/home/map_location.svg" alt="map location point">
-                    <span class="location__text">California</span>
+                <nav class="header__arrows">
+                    <a class="header__arrow" href="#"><img src="images/home/arrow.svg" alt="navigation arrow"></a>
+                    <a class="header__arrow header__arrow--reversed" href="#"><img src="images/home/arrow.svg" alt="navigation arrow"></a>
+                </nav>
+            </header>
+            <div class="vertical-nav">
+                <ul class="vertical-nav__list">
+                    <a class="vertical-nav__item" href="#">
+                        <img class="vertical-nav__img" src="images/home/surf.svg" alt="surf and waves">
+                        <span class="vertical-nav__text">Game</span>
+                    </a>
+                    <a class="vertical-nav__item" href="#">
+                        <img class="vertical-nav__img" src="images/home/travel.svg" alt="travel bus">
+                        <span class="vertical-nav__text">Travel</span>
+                    </a>
+                    <a class="vertical-nav__item" href="#">
+                        <img class="vertical-nav__img" src="images/home/camp.svg" alt="camping">
+                        <span class="vertical-nav__text">Recovery</span>
+                    </a>
+                    <a class="vertical-nav__item" href="#">
+                        <img class="vertical-nav__img" src="images/home/surf_board.svg" alt="surf board shop">
+                        <span class="vertical-nav__text">Merch</span>
+                    </a>
+                    <a class="vertical-nav__item" href="#">
+                        <img class="vertical-nav__img vertical-nav__img--small" src="images/home/search.svg" alt="search logo">
+                    </a>
+                    <div class="date">
+                        <div class="date__day">
+                            <p class="date__day-text">20</p>
+                        </div>
+                        <div class="date__month-year">
+                            <p class="date__month-year-text">06 | 2018</p>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <img class="location__img" src="images/home/map_location.svg" alt="map location point">
+                        <span class="location__text">California</span>
+                    </div>
+                </ul>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="map">
+                <img class="map__background" src="images/home/bg_map.svg" alt="background map">
+                <img class="map__main-line" src="images/home/map.svg" alt="main map">
+                <span class="map__point-top">
+                    <p class="map__city-name">Home Bench</p>
+                    <img class="map__point-top-img" src="images/home/oval.svg" alt="point on the map">
+                </span>
+                <span class="map__point-bottom">
+                    <p class="map__city-name">West Shore | Malibu, CA</p>
+                    <img class="map__point-bottom-img" src="images/home/oval.svg" alt="point on the map">
+                </span>
+            </div>
+            <div class="bottom-nav">
+                <div class="bottom-nav__double-arrows">
+                    <a class="bottom-nav__arrows-img" href="#">
+                        <img src="images/home/double_arrows.svg" alt="double arrows">
+                    </a>
                 </div>
-            </ul>
-        </div>
-        <div class="vertical-line"></div>
-        <div class="map">
-            <img class="map__background" src="images/home/bg_map.svg" alt="background map">
-            <img class="map__main-line" src="images/home/map.svg" alt="main map">
-            <span class="map__point-top">
-                <p class="map__city-name">Home Bench</p>
-                <img class="map__point-top-img" src="images/home/oval.svg" alt="point on the map">
-            </span>
-            <span class="map__point-bottom">
-                <p class="map__city-name">West Shore | Malibu, CA</p>
-                <img class="map__point-bottom-img" src="images/home/oval.svg" alt="point on the map">
-            </span>
-        </div>
-        <div class="bottom-nav">
-            <ul class="bottom-nav__list">
-                <li class="bottom-nav__element">
-                    <div class="bottom-nav__line"></div>
-                    <div class="bottom-nav__text-block">
-                        <div class="bottom-nav__number">
-                            <p>01</p>
+                <ul class="bottom-nav__list">
+                    <li class="bottom-nav__element">
+                        <div class="bottom-nav__line"></div>
+                        <div class="bottom-nav__text-block">
+                            <div class="bottom-nav__number">
+                                <p>01</p>
+                            </div>
+                            <div class="bottom-nav__place">
+                                <p>North Rink</p>
+                            </div>
                         </div>
-                        <div class="bottom-nav__place">
-                            <p>North Rink</p>
+                    </li>
+                    <li class="bottom-nav__element">
+                        <div class="bottom-nav__line"></div>
+                        <div class="bottom-nav__text-block">
+                            <div class="bottom-nav__number">
+                                <p>02</p>
+                            </div>
+                            <div class="bottom-nav__place">
+                                <p>South Rink</p>
+                            </div>
                         </div>
+                    </li>
+                    <li class="bottom-nav__element--checked">
+                        <div class="bottom-nav__line"></div>
+                        <div class="bottom-nav__text-block">
+                            <div class="bottom-nav__number">
+                                <p>03</p>
+                            </div>
+                            <div class="bottom-nav__place">
+                                <p>Home Bench</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="bottom-nav__element">
+                        <div class="bottom-nav__line"></div>
+                        <div class="bottom-nav__text-block">
+                            <div class="bottom-nav__number">
+                                <p>04</p>
+                            </div>
+                            <div class="bottom-nav__place">
+                                <p>Visitor Bench</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="home-title">
+                <div class="home-title__subtitle">
+                    <div class="home-title__horizontal-line"></div>
+                    <div class="home-title__text">
+                        <p>SURF</p>
                     </div>
-                </li>
-                <li class="bottom-nav__element">
-                    <div class="bottom-nav__line"></div>
-                    <div class="bottom-nav__text-block">
-                        <div class="bottom-nav__number">
-                            <p>02</p>
-                        </div>
-                        <div class="bottom-nav__place">
-                            <p>South Rink</p>
-                        </div>
+                </div>
+                <h1 class="title title--indented">HOME BENCH</h1>
+                <div class="home-title__subtitle">
+                    <div class="home-title__horizontal-line"></div>
+                    <div class="home-title__text">
+                        <p>CONDITION</p>
                     </div>
-                </li>
-                <li class="bottom-nav__element--checked">
-                    <div class="bottom-nav__line"></div>
-                    <div class="bottom-nav__text-block">
-                        <div class="bottom-nav__number">
-                            <p>03</p>
-                        </div>
-                        <div class="bottom-nav__place">
-                            <p>Home Bench</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="bottom-nav__element">
-                    <div class="bottom-nav__line"></div>
-                    <div class="bottom-nav__text-block">
-                        <div class="bottom-nav__number">
-                            <p>04</p>
-                        </div>
-                        <div class="bottom-nav__place">
-                            <p>Visitor Bench</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="home-title">
-            <div class="home-title__subtitle">
-                <div class="home-title__horizontal-line"></div>
-                <div class="home-title__text">
-                    <p>SURF</p>
+                </div>
+                <div class="home-title__condition">
+                    <p>RADICAL</p>
+                </div>
+                <div class="home-title__arrow">
+                    <a class="home-title__arrow-img" href="#">
+                        <img src="images/home/arrow.svg" alt="home title arrow">
+                    </a>
                 </div>
             </div>
-            <h1 class="title title--indented">HOME BENCH</h1>
-            <div class="home-title__subtitle">
-                <div class="home-title__horizontal-line"></div>
-                <div class="home-title__text">
-                    <p>CONDITION</p>
-                </div>
-            </div>
-            <div class="home-title__condition">
-                <p>RADICAL</p>
-            </div>
-            <div class="home-title__arrow">
-                <a class="home-title__arrow-img" href="#">
-                    <img src="images/home/arrow.svg" alt="home title arrow">
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+        <section class="surf">
+        </section>
+        <section class="travel">
+        </section>
+        <section class="show">
+        </section>
+    </div>
 </main>
 </body>
 </html>
