@@ -239,3 +239,57 @@ body {
     font-size: 16px;
     line-height: 19px;
 }
+
+.home-title {
+    position: fixed;
+    bottom: 150px;
+    right: 80px;
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.home-title__horizontal-line {
+    width: 80px;
+    height: 1px;
+    opacity: 0.5;
+    background-color: var(--white-color);
+}
+
+.home-title__text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    opacity: 0.5;
+}
+
+.home-title__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 90px;
+}
+
+.title--indented {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.home-title__condition {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 85px;
+}
+
+.home-title__arrow {
+    display: flex;
+    justify-content: flex-start;
+    transform: rotate(-180deg);
+}
