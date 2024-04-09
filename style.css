@@ -61,7 +61,7 @@ body {
 .header__arrows {
     position: relative;
     top: 15%;
-    right: -93%;
+    right: -90%;
 }
 
 .header__arrow {
@@ -184,4 +184,58 @@ body {
 .location__text {
     font-size: 12px;
     line-height: 14px;
+}
+
+.vertical-line {
+    position: fixed;
+    top: 0;
+    left: 170px;
+    width: 1px;
+    height: 100vh;
+    background-color: var(--white-color);
+    transform: translateX(-50%);
+    opacity: 0.25;
+}
+
+.bottom-nav__list {
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+}
+
+.bottom-nav__list li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.bottom-nav__list li:last-child {
+    margin-right: 0;
+}
+
+.bottom-nav__element--checked .bottom-nav__line {
+    background-color: var(--mint-color);
+}
+
+.bottom-nav__line {
+    width: 200px;
+    height: 4px;
+    background-color: var(--white-color);
+}
+
+.bottom-nav__text-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bottom-nav__number {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 19px;
+}
+
+.bottom-nav__place {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
 }
