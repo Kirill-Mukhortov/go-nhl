@@ -2,3 +2,38 @@
     height: 100vh;
     background-color: var(--black-color);
 }
+
+.surf-map {
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.surf-map__img {
+    max-width: 1400px;
+    max-height: 800px;
+}
+
+.surf-title__rectangle {
+    position: relative;
+    left: 105px;
+    width: 80px;
+    height: 1px;
+    background-color: var(--mint-color);
+}
+
+.surf-title {
+    position: relative;
+    top: 150px;
+    left: 370px;
+}
+
+.surf-title__bg-text {
+    position: relative;
+    top: -45px;
+    left: -390px;
+    font-size: 220px;
+    font-weight: 800;
+    line-height: 156px;
+    opacity: 0.02;
+}
