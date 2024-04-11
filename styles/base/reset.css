@@ -34,6 +34,12 @@ ol[role='list'] {
     list-style: none;
 }
 
+/* Remove markers from ul list and start padding */
+ul {
+    list-style-type: none;
+    padding-inline-start: unset;
+}
+
 /* Make images, videos and icons easier to work with */
 img, picture, video, canvas, svg {
     display: block;

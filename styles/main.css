@@ -21,3 +21,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+.plain-text {
+    text-transform: none;
+}

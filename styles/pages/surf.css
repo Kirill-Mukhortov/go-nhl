@@ -6,17 +6,21 @@
 
 .surf-map {
     position: relative;
+    /* top не нужен для меньшей ширины */
+    top: 10%;
     left: 10%;
 }
 
 .surf-map__img {
-    max-width: 1400px;
+    /* 1400 для меньшей */
+    max-width: 1600px;
     max-height: 800px;
 }
 
 .surf-map-marker {
     position: absolute;
-    top: 20%;
+    /* 20 для меньшей */
+    top: 10%;
     right: 0;
 }
 
@@ -52,8 +56,9 @@
 .surf-subtitle {
     position: absolute;
     right: 5%;
-    top: 25%;
-    max-width: 300px;
+    /* 25 для меньшей */
+    top: 14%;
+    max-width: 410px;
 }
 
 .subtitle__text-separator {
@@ -65,8 +70,9 @@
 
 .surf-place-card {
     position: relative;
-    top: -25%;
-    left: 70%;
+    /* -25 и 70 для меньшей */
+    top: -20%;
+    left: 80%;
     max-width: 305px;
     max-height: 430px;
 }
@@ -81,8 +87,74 @@
     width: 283px;
     height: 216px;
     border-radius: 8px;
-    background-color: var(--dark-black-color);
-    opacity: 0.7;
+    background-color: rgba(var(--dark-black-color-rgb), 0.7);
+}
+
+.surf-place-card__inner-rectangle {
+    padding: 30px;
+    height: 100%;
+    opacity: 1;
+}
+
+.surf-place-card__title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+
+}
+
+.surf-place-card__line {
+    width: 80px;
+    height: 1px;
+    margin: 10px 0;
+    background-color: var(--mint-color);
+}
+
+.surf-place-card__country {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.surf-place-card__arrow {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.arrow-small {
+    width: 16px;
+    height: 14px;
+    margin-left: auto;
+}
+
+.surf-place-card__weather-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.surf-place-card__weather-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.surf-place-card__img {
+    width: 39px;
+    height: 23px;
+}
+
+.surf-place-card__index {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.surf-place-card__index-name {
+    font-size: 10px;
+    line-height: 12px;
 }
 
 .surf-place-card__coordinates {
@@ -106,18 +178,16 @@
 .surf-place-card__drop {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
     position: relative;
+    margin-top: 10px;
 }
 
 .surf-place-card__drop::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    max-width: 22px;
     background-image: url('/images/surf/drop.svg');
-    filter: blur(10px); /* Применяем размытую тень к псевдоэлементу */
-    z-index: -1;
+    filter: blur(12px);
 }
