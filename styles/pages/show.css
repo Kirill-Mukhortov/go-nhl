@@ -1,5 +1,6 @@
 .show {
-    background-image: url('../../images/show/show.png');
+    background-image: url('../../images/show/show.webp');
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }

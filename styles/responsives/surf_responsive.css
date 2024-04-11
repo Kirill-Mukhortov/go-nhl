@@ -1,0 +1,15 @@
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    .surf-title {
+        top: 100px;
+        left: 330px;
+    }
+
+    .surf-map__img {
+        max-width: 1200px;
+        max-height: 600px;
+    }
+
+    .surf-map {
+        top: 7%;
+    }
+}

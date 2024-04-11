@@ -1,17 +1,28 @@
 .surf {
-    height: 100vh;
+    position: relative;
+    height: 150vh;
     background-color: var(--black-color);
 }
 
 .surf-map {
     position: relative;
-    top: 10%;
     left: 10%;
 }
 
 .surf-map__img {
     max-width: 1400px;
     max-height: 800px;
+}
+
+.surf-map-marker {
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+.surf-map-marker__img {
+    max-width: 149px;
+    max-height: 350px;
 }
 
 .surf-title__rectangle {
@@ -36,4 +47,77 @@
     font-weight: 800;
     line-height: 156px;
     opacity: 0.02;
+}
+
+.surf-subtitle {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    max-width: 300px;
+}
+
+.subtitle__text-separator {
+    font-size: 40px;
+    font-weight: 250;
+    line-height: 86px;
+    margin: 0 8px
+}
+
+.surf-place-card {
+    position: relative;
+    top: -25%;
+    left: 70%;
+    max-width: 305px;
+    max-height: 430px;
+}
+
+.surf-place-card__details {
+    position: absolute;
+    width: 283px;
+    height: 260px;
+}
+
+.surf-place-card__rectangle {
+    width: 283px;
+    height: 216px;
+    border-radius: 8px;
+    background-color: var(--dark-black-color);
+    opacity: 0.7;
+}
+
+.surf-place-card__coordinates {
+    margin-right: -5px;
+    position: absolute;
+    top: -130px;
+    right: 0;
+    width: 22px;
+    height: 425px;
+    transform: rotate(180deg);
+}
+
+.surf-place-card__lat-long {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+    writing-mode: vertical-rl;
+}
+
+.surf-place-card__drop {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.surf-place-card__drop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/surf/drop.svg');
+    filter: blur(10px); /* Применяем размытую тень к псевдоэлементу */
+    z-index: -1;
 }

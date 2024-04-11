@@ -1,5 +1,6 @@
 .travel {
-    background-image: url('../../images/travel/travel.png');
+    background-image: url('../../images/travel/travel.webp');
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }

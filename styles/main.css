@@ -3,10 +3,13 @@
 @import "pages/surf.css";
 @import "pages/travel.css";
 @import "pages/show.css";
+@import "responsives/home_responsive.css";
+@import "responsives/surf_responsive.css";
 
 body {
     font-family: "Fira Sans", sans-serif;
     color: var(--white-color);
+    text-transform: uppercase;
 }
 
 .scrollable-container {
@@ -16,4 +19,5 @@ body {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }

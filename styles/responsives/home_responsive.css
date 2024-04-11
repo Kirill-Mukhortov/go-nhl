@@ -1,0 +1,50 @@
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    .vertical-nav {
+        margin-top: 70px;
+    }
+
+    .vertical-nav__list {
+        gap: 10px;
+    }
+
+    .header__text {
+        top: 390px;
+    }
+
+    .header__rectangle {
+        height: 140px;
+    }
+
+    .bottom-nav__list li {
+        margin-right: 15px;
+    }
+
+    .bottom-nav__line {
+        width: 180px;
+    }
+
+    .home-title {
+        bottom: 125px;
+    }
+
+    .map {
+        max-width: 600px;
+    }
+
+    .map__main-line {
+        max-width: 130px;
+        top: 60px;
+        right: 155px;
+    }
+
+    .map__point-top {
+        top: 55px;
+        right: 170px;
+    }
+
+    .map__point-bottom {
+        top: 200px;
+        right: 270px;
+    }
+
+}
