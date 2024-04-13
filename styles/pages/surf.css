@@ -257,6 +257,10 @@
     filter: grayscale(70%);
 }
 
+.surf-cards__card:first-child {
+    margin-left: auto;
+}
+
 .surf-cards__card:hover {
     transform: translateY(-10px);
     z-index: 1;
@@ -314,4 +318,32 @@
 
 .surf-cards__card:hover .surf-cards__play-btn {
     display: flex;
+}
+
+.surf-cards__two-line-text {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+.surf-cards__city {
+    z-index: 1;
+    position: absolute;
+    bottom: 185px;
+    left: 40px;
+    width: 22px;
+    height: 400px;
+    transform: rotate(180deg);
+}
+
+.surf-card__city-name {
+    font-size: 25px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    writing-mode: vertical-rl;
 }
