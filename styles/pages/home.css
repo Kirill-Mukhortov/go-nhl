@@ -211,6 +211,10 @@
     margin-right: 0;
 }
 
+.bottom-nav__element {
+    cursor: pointer;
+}
+
 .bottom-nav__element--checked .bottom-nav__line {
     background-color: var(--mint-color);
 }

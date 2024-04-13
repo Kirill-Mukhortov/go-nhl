@@ -5,11 +5,20 @@
     }
 
     .surf-map__img {
-        max-width: 1200px;
+        max-width: 1400px;
         max-height: 600px;
     }
 
-    .surf-map {
-        top: 7%;
+    .surf-map-marker {
+        top: 20%;
+    }
+
+    .surf-subtitle {
+        top: 25%;
+    }
+
+    .surf-place-card {
+        top: -25%;
+        left: 70%;
     }
 }
