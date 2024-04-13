@@ -276,3 +276,42 @@
 .surf-cards__card:nth-child(4) {
     top: -3%;
 }
+
+.surf-cards__play-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 179px;
+    height: 80px;
+    background-color: var(--mint-color);
+}
+
+.surf-cards__btn-text {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 36px;
+    margin-left: 20px;
+}
+
+.surf-cards__btn-horizontal-line {
+    position: absolute;
+    left: -10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 20px;
+    height: 1px;
+    background-color: var(--white-color);
+}
+
+.surf-cards__arrow {
+    position: relative;
+    margin: auto;
+}
+
+.surf-cards__card:hover .surf-cards__play-btn {
+    display: flex;
+}
