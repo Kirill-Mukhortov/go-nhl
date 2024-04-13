@@ -1,13 +1,13 @@
 .surf {
     position: relative;
-    height: 1600px;
+    height: 2600px;
     background-color: var(--black-color);
 }
 
 .surf-map {
     position: relative;
     max-height: 900px;
-    top: 10%;
+    top: 5%;
     left: 10%;
 }
 
@@ -115,7 +115,7 @@
 
 .surf-place-card {
     position: relative;
-    top: -30%;
+    top: -17%;
     left: 80%;
     max-width: 305px;
     max-height: 430px;
@@ -237,16 +237,42 @@
 }
 
 .surf-cards {
-    display: none;
+    display: flex;
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    height: 1046px;
+    width: 100%;
 }
 
 .surf-cards__card {
-    width: calc(25%);
+    position: relative;
+    margin-left: -45px;
+    width: calc(25% + 45px);
     cursor: pointer;
-    opacity: 0.5;
+    transition: transform 0.3s ease;
+}
+
+.surf-cards__card:not(:hover) .surf-cards__img {
+    filter: grayscale(70%);
 }
 
 .surf-cards__card:hover {
-    transform: translateY(-5px);
-    opacity: 1;
+    transform: translateY(-10px);
+    z-index: 1;
+}
+
+.surf-cards__img {
+    width: 100%;
+    max-height: 1046px;
+}
+
+.surf-cards__card:nth-child(1),
+.surf-cards__card:nth-child(3) {
+    top: 3%;
+}
+
+.surf-cards__card:nth-child(2),
+.surf-cards__card:nth-child(4) {
+    top: -3%;
 }
