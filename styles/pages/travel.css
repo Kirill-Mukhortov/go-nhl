@@ -1,6 +1,70 @@
-.travel {
+.travel__stadium {
     background-image: url('../../images/travel/travel.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+.travel__title {
+    position: relative;
+    top: 150px;
+    left: 370px;
+}
+
+.travel__subtitle {
+    position: relative;
+    top: 30%;
+    right: 5%;
+}
+
+.travel-airline {
+    position: relative;
+    height: 700px;
+    background-color: var(--black-color);
+}
+
+.travel-airline__plane {
+    position: absolute;
+    top: -225px;
+    right: 0;
+    max-width: 750px;
+}
+
+.travel-airline__subtitle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 5%;
+    left: 5%;
+}
+
+.subtitle-logo {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.travel-airline__list {
+    display: flex;
+    position: absolute;
+    bottom: 25%;
+}
+
+.travel-airline__element-vertical-text {
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.travel-airline__text {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+    writing-mode: vertical-rl;
+}
+
+.travel-airline__two-line-text {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
 }
