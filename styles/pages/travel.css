@@ -19,7 +19,7 @@
 
 .travel-airline {
     position: relative;
-    height: 700px;
+    height: 600px;
     background-color: var(--black-color);
 }
 
@@ -45,9 +45,13 @@
 }
 
 .travel-airline__list {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     display: flex;
-    position: absolute;
-    bottom: 25%;
+    justify-content: space-between;
+    top: 60%;
 }
 
 .travel-airline__element-vertical-text {
@@ -63,8 +67,20 @@
     writing-mode: vertical-rl;
 }
 
+.travel-airline__element-main-text {
+    margin-left: 40px;
+}
+
 .travel-airline__two-line-text {
     font-weight: 800;
     font-size: 40px;
     line-height: 36px;
+}
+
+.travel-airline__bottom-text {
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 5px;
+    text-align: right;
+    opacity: 0.5;
 }
